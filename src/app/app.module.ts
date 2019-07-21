@@ -8,12 +8,22 @@ import {RouterModule} from '@angular/router';
 import {HttpModule} from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { NavComponent } from './Nav/Nav.component';
+import { GISComponent } from './gis/gis.component';
+import { ITComponent } from './it/it.component';
+import { GraphicComponent } from './graphic/graphic.component';
+import { ArchitectureComponent } from './architecture/architecture.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavComponent
+    NavComponent,
+    GISComponent,
+    ITComponent,
+    GraphicComponent,
+    ArchitectureComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,

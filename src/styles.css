@@ -1,1 +1,675 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files 
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~bootstrap/dist/css/bootstrap.css";*/
+body{font-family: 'Open Sans','Trebuchet MS','Tahoma','Arial';background:#ffffff;}
+.img-logo{max-width:130px;padding:4px;}
+.searchbtn{border-radius: 100px;
+    width: 34px;
+    padding: 6px;
+    background: silver;
+    border: 1px solid silver;}
+.topnavbarspacer{background-color:white;z-index:100;width:100%;height:48px;position:fixed;top:0;}
+.ccnumbertopnav,.ccnumbertopnav:active,.ccnumbertopnav:hover,.ccnumbertopnav:focus{color:inherit;text-decoration:none;}
+.totopbuttom{position:fixed;right:0.25%;bottom:5.75%;font-size:26px;display:none;z-index: 20;}
+.full{width:100%;max-width:1800px;}
+.full-width{width:100% !important;}
+.special-max-width{max-width:564px !important;}
+.container-fluid{max-width:1800px;}
+.push-down{margin-top:20px;margin-bottom:0px;}
+.pointer{cursor:pointer;}
+.fltl{float:left;}
+.fltr{float:right;}
+.clear{clear:both;}
+.perm-show{display:block !important;}
+.perm-hide{display:none !important;}
+.row{margin-bottom:10px;}
+.nolink,.nolink:hover{text-decoration:none;}
+.alright{align-content:right;}
+.whiteft{color:white;}
+.blackft{color:black;}
+.txtcenter{text-align:center;}
+.txtright{text-align:right;}
+.txtleft{text-align:left;}
+.fontbold{font-weight:bold;}
+.fs10{font-size:10px;}
+.fs12{font-size:12px;}
+.fs14{font-size:14px;}
+.fs16{font-size:16px;}
+.fs18{font-size:18px;}
+.fs20{font-size:20px;}
+.fs24{font-size:24px;}
+.fs30{font-size:30px;}
+.fs60{font-size:60px;}
+.fs200{font-size: 200px;}
+.mb2px{margin-bottom:2px;}
+.mb5px{margin-bottom:5px;}
+.mb10px{margin-bottom:10px;}
+.mb15px{margin-bottom:15px;}
+.mb20px{margin-bottom:20px;}
+.mb40px{margin-bottom:40px;}
+.mb50px{margin-bottom:50px;}
+.mb70px{margin-bottom:70px;}
+.mtmin20px{margin-top: -20px;}
+.mt5px{margin-top:5px;}
+.mt10px{margin-top:10px;}
+.mt12px{margin-top:12px;}
+.mt15px{margin-top:15px;}
+.mt20px{margin-top:20px;}
+.mt30px{margin-top:30px;}
+.mr5px{margin-right:5px;}
+.mr10px{margin-right:10px;}
+.ml5px{margin-left:5px;}
+.ml10px{margin-left:10px;}
+.m12080{margin:12px 0 8px 0;}
+.m40120{margin:4px 0 12px 0;}
+.m5050{margin:5px 0 5px 0;}
+.m0330{margin:0 3px 3px 0;}
+.m00010{margin:0 0 0 10px;}
+.p0px{padding:0px;}
+.p1px{padding:1px;}
+.p2px{padding:2px;}
+.p4px{padding:4px;}
+.p5px{padding:5px;}
+.p6px{padding:6px;}
+.p8px{padding:8px;}
+.p10px{padding:10px;}
+.p12px{padding:12px;}
+.p02px{padding:0 2px;}
+.p2262px{padding:2px 2px 6px 2px;}
+.p44104px{padding:4px 4px 10px 4px;}
+.p5272px{padding:5px 2px 7px 2px;}
+.p66226px{padding:6px 6px 22px 6px;}
+.p66106px{padding:6px 6px 10px 6px;}
+.pt5px{padding-top:5px;}
+.pb10px{padding-bottom:10px;}
+.pl0px{padding-left:0px;}
+.pl32px{padding-left:32px;}
+.pl35px{padding-left:35px;}
+.wid15pc{width:15% !important;}
+.w1px{width:1px;}
+.w20px{width:20px;}
+.w30px{width:30px;}
+.w40px{width:40px;}
+.w50px{width:50px;}
+.w100px{width:100px;}
+.w250px{width:250px;}
+.maxw100px{max-width:100px;}
+.maxw160px{max-width:160px;}
+.maxw230px{max-width:230px;}
+.maxw300px{max-width:300px;}
+.maxw450px{max-width:450px;}
+.w20p{width:20%;}
+.w25p{width:25%;}
+.w30p{width:30%;}
+.w40p{width:40%;}
+.w75p{width:75%;}
+.w80p{width:80%;}
+.w85p{width:85%;}
+.w120p{width:120%;}
+.h1px{height:1px;}
+.h20px{height:20px;}
+.h37px{height:37px;}
+.h50px{height:50px;}
+.h120px{height:120px;}
+.h160px{height:160px;}
+.h180px{height:180px;}
+.h400px{height:400px;}
+.h20p{height:20%;}
+.h30p{height:30%;}
+.maxh135px{max-height:135.625px;}
+.s20px{size:20px;}
+.no-border{border-radius:0px;}
+.rad0px{border-radius:0px;}
+.rad4px{border-radius:4px;}
+.bordno{border-style:none;}
+.notavailable-icon-large{font-size:90px;color:lightslategrey;}
+.heading{font-size:24px;padding:10px;}
+.sub-heading{font-size:16px;padding:5px;}
+.headerunderline{border-bottom:1px solid #ececec;}
+.text-uppercase{text-transform:uppercase;}
+.txtcenterimg{   
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	}
+.product-btn{Padding-left:20px; Padding-right:20px;width:100%;border-radius:0px;}
+.prod-details-btn{Padding-left:10px; Padding-right:10px;border-radius:0px;}
+
+.footer-border{margin:0 0 0 10px;border-right:2px solid black; padding-right:10px;}
+.login-modal{
+	height:35px;
+	padding:3px;
+	width:100%;
+	border-radius: 4px;
+}
+.slider-image{width:100%;max-width:1000px;max-height:470px;min-width:997px;min-height:424px;}
+.banner-image{width:100%;max-width:41px;max-height:102px;margin-top:170px;}
+
+.prod-image-border{border: thin solid #cccccc; width:260px; height:260px;}
+.prod-image{max-width:240px; width:100%; max-height:240px; margin-top:10px;}
+.form-valid-requirements{margin:10px 0 0 10px;}
+.form-valid-requirements>div{margin-bottom:5px;font-size:10px;color:#990000;}
+input.ng-invalid,input.ng-invalid-required,input.ng-invalid-email{
+	border:1px solid #949494!important;
+	-webkit-box-shadow: 0px 0px 4px #949494;
+       -moz-box-shadow: 0px 0px 4px #949494;
+            box-shadow: 0px 0px 4px #949494;}
+.nav-powered{font-size:12px;margin-right:26px;}
+
+.searchfilter-shrinker{overflow:hidden;height:235px;}
+.searchfilter-showmore{font-size:10px;cursor:pointer;text-align:center;padding:6px;}
+.searchfilter-panel{border-top-left-radius:23px;border-top-right-radius:23px;border-bottom-left-radius:20px;border-bottom-right-radius:24px;}
+.searchfilter-heading{border-top-left-radius:20px;border-top-right-radius:20px;}
+.searchfilter-heading h1{font-size:24px;padding:3px;}
+.searchfilter-panelbody{padding:0px;min-height:16px;}
+.searchfilter-navtabs{width:33%;margin:5px 0px 5px 0px;}
+.searchfilter-navforms{width:64%;margin:5px 6px 5px 0px;}
+.searchfilter-btn{margin:2px 0;padding:20px 0;border-bottom-right-radius:20px;}
+
+
+.angular-google-map-container{height:500px;}
+.top-nav-underbar{margin-top:48px;z-index:11;position:fixed;top:0;left:0;width:100%;}
+.underbar-fade-show{
+   opacity: 1;
+   transition: opacity .5s ease-in-out;
+   -moz-transition: opacity .5s ease-in-out;
+   -webkit-transition: opacity .5s ease-in-out;
+   }
+.underbar-fade-hide{
+   opacity: 0;
+   transition: opacity .5s ease-in-out;
+   -moz-transition: opacity .5s ease-in-out;
+   -webkit-transition: opacity .5s ease-in-out;
+   }
+.modalbrands div div.panel:hover{background:#e4e4e4}
+.overlaytype{position:absolute;background:black;color:white;right:15px;;padding:1px 7px;font-size:10px;z-index:1;opacity:0.7;border-bottom-left-radius:10px !important;}
+.overlayimg{position:absolute;z-index:1;}
+.overlayimg-special-list{position:absolute;bottom:0;right:15px;width:40%;max-width:200px;z-index:1;}
+.overlayimg-special-details{position:absolute;bottom:20px;right:15px;padding:0 2px 0 0;width:40%;max-width:200px;z-index:1;}
+.search-result-model-makeseries{font-size:30px;line-height:120%;text-transform:uppercase;font-weight:600;}
+.search-result-model-model{font-size:18px;line-height:120%;}
+.search-result-model-features{font-size:16px;line-height: 150%;margin:3px 0;}
+.search-result-model-from{font-size:12px;margin-top:10px;}
+.search-result-model-price{font-size:40px;margin-top:-14px;}
+.search-result-model-estimated{font-size:12px;}
+.search-result-model-monthly{font-size:18px;}
+.search-result-stock-descr{font-size:28px;line-height:120%;font-weight:600;}
+.search-result-stock-kms{font-size:18px;line-height:120%;}
+.search-result-stock-features{font-size:16px;line-height: 150%;margin:3px 0;}
+.search-result-stock-from{font-size:12px;margin-top:10px;}
+.search-result-stock-price{font-size:38px;margin-top:-14px;}
+.search-result-stock-estimated{font-size:12px;}
+.search-result-stock-monthly{font-size:18px;}
+.search-result-noresults{font-size:90px;color:lightslategrey;}
+.search-result-specials-header{font-size:30px;line-height:110%;text-transform:uppercase;font-weight:600;}
+.search-result-specials-descr{font-size:14px;line-height: 130%;margin-top:5px;}
+.search-preview-descr{font-size:34px;line-height:110%;}
+.search-preview-price{font-size:40px;border-top:1px solid #e5e5e5;}
+.search-details-specials-header{font-size:30px;line-height:110%;margin-bottom:15px;text-transform:uppercase;font-weight:600;}
+.search-details-specials-dealer{font-size:18px;margin-bottom:15px;}
+.search-details-specials-descr{font-size:18px;line-height:130%;border-top:1px solid #e5e5e5;margin-top:5px;padding-top:5px;}
+.search-details-specials-why{border-top:1px solid #e5e5e5;margin-top:10px;padding-top:10px;}
+.model-details-contain{text-align: center;margin-bottom:10px;}
+.model-details-makeseries{font-size:34px;line-height:110%;}
+.model-details-from{font-size:12px;}
+.model-details-price{font-size:40px;border-top:1px solid #e5e5e5;}
+.model-details-estimated{font-size:12px;}
+.model-details-monthly{font-size:30px;border-top:1px solid #e5e5e5;}
+.model-details-instalment{width:49%;text-align: left;margin-bottom:5px;}
+.model-details-instalment select{width:70%;}
+.stock-details-contain{text-align: center;margin-bottom:10px;}
+.stock-details-descr{font-size:34px;line-height:110%;}
+.stock-details-kms{font-size:18px;}
+.stock-details-from{font-size:12px;}
+.stock-details-price{font-size:40px;border-top:1px solid #e5e5e5;}
+.stock-details-estimated{font-size:12px;}
+.stock-details-monthly{font-size:30px;border-top:1px solid #e5e5e5;}
+.stock-details-instalment{width:49%;text-align: left;margin-bottom:5px;}
+.stock-details-instalment select{width:70%;}
+
+.model-details-luxury-heading{font-size:35px;padding:20px;margin:0px!important;}
+.model-details-luxury-heading-name{text-align:left;}
+.model-details-luxury-heading-price{text-align:right;letter-spacing: 3px;}
+
+.model-choice-btn{padding: 25px 0;margin-bottom:10px;}
+.stock-choice-btn{padding: 25px 0;margin-bottom:10px;}
+.hd-floating-enquiry-form{background:white;padding-top:20px;border-bottom-right-radius:40px;position:absolute;}
+.hd-floating-enquiry-form-right{background:white;padding-top:20px;border-bottom-left-radius:30px;position:absolute;right:0;}
+.brandHeroBanner{height:550px;background-size:cover;background-repeat:no-repeat;background-position:0% 40%;}
+.brandHeroBanner div{height:100%;width:100%;background-image: url('https://storage.googleapis.com/cdn.callacar.co.za/images/content/pat2.png');opacity: 0.75;}
+.brandTitle{color:gray;font-size:12px;font-weight:bolder;position:absolute;top:6px;background:white;padding:5px 20px;border-top:1px solid silver;max-width:88%;}
+.brand-hover{position:absolute;text-align: center;width: 90%;height: 100%;color: #FFF;background-color: rgba(255,255,255,0.7);opacity: 0;-webkit-transition: all 0.45s;-moz-transition: all 0.45s;-o-transition: all 0.45s;transition: all 0.45s;z-index: 10;}
+.brand-hover:hover{opacity: 1;}
+.brand-hover-txt{position: absolute;top: 50%;width: 100%;margin-top: -12px;color: #000;-webkit-transition: all 0.25s;-moz-transition: all 0.25s;-o-transition: all 0.25s;transition: all 0.25s;}
+.brand-hover-txt span{border: 2px solid #337ab7;border-radius: 2px;padding: 8px 18px;margin: 0 1px;color: #337ab7;font-weight: 700;font-size: 11px;letter-spacing: 1px;text-transform: uppercase;-webkit-transition: all 0.25s;-moz-transition: all 0.25s;-o-transition: all 0.25s;transition: all 0.25s;}
+.brand-hover-txt span {background-color:#337ab7;color: #fff;border: 2px solid #fff;}
+
+.promotion-hover{
+	position:absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	-webkit-transition: all 0.45s;
+	-moz-transition: all 0.45s;
+	-o-transition: all 0.45s;
+	transition: all 0.45s;
+	z-index: 10;
+}
+.promotion-hover-show{
+	opacity: 1;
+}
+.promotion-hover-txt{
+	position: absolute;
+	top: 20%;
+	width: 100%;
+	margin-top: -12px;
+	color: #000;
+	-webkit-transition: all 0.25s;
+	-moz-transition: all 0.25s;
+	-o-transition: all 0.25s;
+	transition: all 0.25s;
+}
+.promotion-hover-txt span{
+	border-radius: 2px;
+	padding: 8px 18px;
+	margin: 0 1px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	-webkit-transition: all 0.25s;
+	-moz-transition: all 0.25s;
+	-o-transition: all 0.25s;
+	transition: all 0.25s;
+}
+.promotion-hover-txt span {
+	font-size: 160px;
+	color: lime;
+}
+.promotion-hover-extra{
+	position:absolute;
+	width:100%;
+	background-color: white;
+	top:100%;
+	z-index:10;
+	opacity:0.9;
+	font-size:14px;
+	text-align:left;
+	padding:0px 13px 22px 13px;
+	border-bottom:1px solid silver;
+}
+
+.homeHeroBanner{
+	height:500px;
+	background-size: cover; 
+	background-repeat: no-repeat;
+	background-position:0% 40%;
+}
+.homeHeroBanner div{
+	height:100%;width:100%;
+	background-image: url('https://storage.googleapis.com/cdn.callacar.co.za/images/content/pat2.png') !important;
+}
+.homeHeroBanner div div {
+	height:auto;
+	font-size:60px;
+	bottom:0px;
+	position:absolute;
+	width:90%;
+	text-align: left;
+	margin: 0 0 20px 20px;
+	line-height: 80%;
+    background-image: none;
+}
+.homepage-promo-banners{margin:0 auto;max-width:600px;}
+.parallax {
+	opacity: 0.75;
+	min-height: 300px;
+	background-attachment: fixed;
+	background-position: 0% 80%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallax-txt{
+	font-size: 50px;
+	color: white;
+	border: 1px solid white;
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+	margin: 11% 0 0 1%;
+    padding: 0 18px;
+}
+.parallax-over{
+	height:300px;
+	width:100%;
+	background-image: url('https://storage.googleapis.com/cdn.callacar.co.za/images/content/pat3.png');
+	opacity: 0.5;
+}
+
+.searchfilter-navpill{border-radius:0px !important;border-top-right-radius:6px !important;border-bottom-right-radius:6px !important;}
+.drop-shadow{-webkit-box-shadow: 0px 24px 18px -22px rgba(100,100,100,.80); -moz-box-shadow: 0px 24px 18px -22px rgba(100,100,100,.80); box-shadow: 0px 24px 18px -22px rgba(100,100,100,.80);}
+
+.paging-start,.paging-end{width:29px;height:65px;font-size:19px;padding:21px 0 0 0;}
+.paging-prev,.paging-next{width:80px;height:65px;font-size:34px;padding:12px 0 0 0;}
+
+.specrow div,.specrow div span div{padding:10px 0 10px 3px;margin-bottom:0px !important;}
+.featurename{font-weight: bold;}
+
+.image-eye{position: absolute;color:white;font-size:20px;margin:3px 0px 0px 5px;text-shadow:0 0 5px silver;opacity:0.35;}
+.search-results-new-special-float{position:fixed;top:110px;width:31.5%;padding-left:0px;}
+
+.score-list{width:100%;margin:0px;}
+.score-list > div{width:20%;border:1px solid white;margin:3px 0px;font-size:8px;padding:2px 0px;}
+.score-list > div.btn-success{padding:5px 0;}
+.score-list > div.btn-info, .score-list > div.btn-warning{margin: 6px 0;}
+.score-list > div > span{font-size:16px;}
+
+.score-details{width:100%;margin:10px 0 10px 0;}
+.score-details > div{width:20%; border:1px solid white;margin: 5px 0px;font-size:8px;padding:3px 0px;}
+.score-details > div.btn-success{padding: 6px 0;}
+.score-details > div.btn-info, .score-details > div.btn-warning{margin:8px 0;}
+.score-details > div > span{font-size:24px;}
+
+.score-preview{width:100%;margin:10px 0 10px 0;}
+.score-preview > div{width:20%; border:1px solid white;margin:5px 0px;font-size:8px;padding:3px 0px;}
+.score-preview > div > span{font-size:24px;}
+
+.specs-preview-new{margin:10px 0;height:200px;overflow:auto;text-align:left;}
+.specs-preview-used{margin:10px 0;height:200px;overflow:auto;text-align:left;}
+.specs-preview-used-noresult{height:30px !important;}
+.specs-preview-divider{margin:7px;border-bottom:1px dotted silver;}
+
+.specs-details-divider{margin:10px;border-bottom:1px dotted silver;}
+
+.container-footer-padding{padding: 20px;}
+.footer-background{background-color: #efefef;}
+.container-footer-bottom{bottom:0px;font-size:10px;max-width:100%;width:100%;z-index:10;margin-left:140px;margin-right:140px;}
+.label-white{background-color: white;border: 1px solid;color: grey;font-weight: normal;padding: .2em .6em .2em;}
+
+/*animation delay*/
+.aed1{
+-webkit-animation-delay: 1s;
+   -moz-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+	    animation-delay: 1s;
+}
+
+.img-overlay3:after{background: url('https://storage.googleapis.com/cdn.callacar.co.za/images/content/pat3.png') repeat;content:'';width: 100%;height: 100%;top:0;left:0;position: absolute;opacity: 0.5;}
+
+.chart{position: relative;display: inline-block;width: 75px;height: 75px;margin:0 5px;text-align: center;}
+.chart span.title{font-size: 10px;width: 75px;display: block;}
+.chart canvas {position: absolute;top: 0;left: 0;}
+.percent {display: inline-block;line-height: 75px;z-index: 2;font-size: 16px;}
+.percent:after {content: '%';margin-left: 0.1em;font-size: .8em;}
+
+@media(max-width: 195px){
+.navbar-brand{max-width:100px;width:100%;}
+}
+
+@media(max-width: 270px){
+.navbar-brand{max-width:120px;width:100%;}
+}
+
+@media (max-width: 375px){
+	.searchfilter-btn{font-size:16px !important;}
+	.rzslider{font-size:12px;}
+}
+@media (min-width: 475px){
+	.mobile-buttons{margin-top:7%;}
+}
+@media (max-width: 768px){
+	.searchfilter-navpill {padding: 17px 9px !important;}
+}
+@media only screen and (min-width: 1200px){
+	.vehicle-list-divider{background-image:url('https://storage.googleapis.com/cdn.callacar.co.za/images/content/vehicle-list-divider.png');background-position:bottom;background-repeat:no-repeat;height:18px;}
+}
+@media (max-width: 1199px){
+	.vehiclelist{border-bottom:10px solid #ececec;}
+	.vas-container{min-height: 230px;}
+}
+@media only screen and (min-width: 926px){
+	.bidvest-logo{max-height:45px !important;margin-top:45px !important;}
+}
+
+@media (min-width: 768px){
+	/*desktops etc*/
+	
+	.top-menu-move-up{top: -57px;}/*adjust top menu*/
+	.bidvest-logo{max-height: 45px;margin-top: 51px;}
+	
+	.pc-hide{display:none;}
+	.pc-perm-show{display:block !important;}
+	.score-preview > div{font-size:14px;}
+	.score-preview > div > span{font-size:40px;}
+	.container-footer{bottom:0;position:relative;width:100%;}
+	.googledetails{max-width:500px;}
+}
+
+@media (max-width: 425px){
+	/*phone,tablets etc*/
+	.googledetails{max-width:200px;}
+}
+
+@media (max-width: 768px){
+	/*phone,tablets etc*/
+	.full-logo-tablet{width:209px;}
+	
+	.parallax-txt{font-size: 37px;margin: 25% 0 0 1%;padding: 0 18px;}
+	.model-details-luxury-heading{margin:0px!important;}
+	.model-details-luxury-heading-name{font-size:26px;text-align:center;margin:5px 0px!important;}
+	.model-details-luxury-heading-price{font-size:32px;text-align:center;margin:5px 0px!important;letter-spacing:2px;}
+}
+@media (max-width: 765px){
+	/*phone etc*/
+	.full-logo{width: initial;max-height:45px;}
+	.push-down{margin-top:70px;}
+	.push-middle{padding-left:140px; padding-right:140px;}
+	.overlayimg{position:absolute;width:70%;max-width:200px;}
+	.btnnowrap{white-space: inherit!important;min-height:67px;}
+}
+
+@media (max-width: 500px){
+	.model-details-instalment{width:100%;text-align: center;}
+	.model-details-instalment select{width:100%;}
+	.model-details-monthly{font-size: 18px;}
+	.model-details-totfin{border-top:1px solid #e5e5e5;}
+	.stock-details-instalment{width:100%;text-align: center;}
+	.stock-details-instalment select{width:100%;}
+	.stock-details-monthly{font-size: 18px;}
+	.stock-details-totfin{border-top:1px solid #e5e5e5;}
+	.totopbuttom{bottom:7%;}
+	.vehiclelist{text-align: center;}
+}
+
+.carousel-control.right, .carousel-control.left {
+  background-image:none;
+}
+
+.navbar,.bidvest-logo{
+	-webkit-transition: all 0.1s ease-out;
+       -moz-transition: all 0.1s ease-out;
+        -ms-transition: all 0.1s ease-out;
+         -o-transition: all 0.1s ease-out;
+            transition: all 0.1s ease-out;
+}
+
+.image{overflow:hidden;}
+.image img.full {
+    -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+    -moz-transition: all 0.5s ease; /* Firefox */
+    -ms-transition: all 0.5s ease; /* IE 9 */
+    -o-transition: all 0.5s ease; /* Opera */
+    transition: all 0.5s ease;
+}
+
+.image:hover img.full {
+    -webkit-transform:scale(1.02); /* Safari and Chrome */
+    -moz-transform:scale(1.02); /* Firefox */
+    -ms-transform:scale(1.02); /* IE 9 */
+    -o-transform:scale(1.02); /* Opera */
+     transform:scale(1.02);
+}
+
+.tab-pane {
+	opacity: 0;
+	-webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+}
+.tab-content > div.active{opacity: 1;}
+
+/* .modal-fullscreen */
+.modal-fullscreen {background-color: white;}
+.modal-fullscreen-success {color: #fff;background-color: #449d44;border-color: #398439;}
+.modal-fullscreen .modal-content {background: transparent;border: 0;-webkit-box-shadow: none;box-shadow: none;}
+.modal-backdrop.modal-backdrop-fullscreen {background: #ffffff;}
+.modal-backdrop.modal-backdrop-fullscreen.in {opacity: .97;filter: alpha(opacity=97);}
+
+/* .modal-fullscreen size: we use Bootstrap media query breakpoints */
+.modal-fullscreen .modal-dialog {margin: 0;margin-right: auto;margin-left: auto;width: 100%;}
+@media (min-width: 768px) {
+  .modal-fullscreen .modal-dialog {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-fullscreen .modal-dialog {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-fullscreen .modal-dialog {
+     width: 1170px;
+  }
+}
+
+.AllInOnePanel {
+ 	-webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@media print{.no-print, .no-print * {display: none !important;}}
+
+body::-webkit-scrollbar {width: 12px;height: 12px;}
+body::-webkit-scrollbar-button {width: 0px;height: 0px;}
+body::-webkit-scrollbar-thumb {border: 0px;border-radius: 0px; background:#941327;}
+body::-webkit-scrollbar-track {border: 0px;border-radius: 0px;}
+body::-webkit-scrollbar-corner {background: transparent;}
+
+.loader,.loader:before,.loader:after {border-radius: 50%;}
+.loader {
+  color: #337ab7;
+  font-size: 11px;
+  text-indent: -99999em;
+  margin: 55px auto;
+  position: relative;
+  width: 10em;
+  height: 10em;
+  box-shadow: inset 0 0 0 1em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  content: '';
+}
+.loader:before {
+  width: 5.2em;
+  height: 10.2em;
+  background: #ffffff;
+  border-radius: 10.2em 0 0 10.2em;
+  top: -0.1em;
+  left: -0.1em;
+  -webkit-transform-origin: 5.2em 5.1em;
+  transform-origin: 5.2em 5.1em;
+  -webkit-animation: loader2 2s infinite ease 1.5s;
+  animation: loader2 2s infinite ease 1.5s;
+}
+.loader:after {
+  width: 5.2em;
+  height: 10.2em;
+  background: #ffffff;
+  border-radius: 0 10.2em 10.2em 0;
+  top: -0.1em;
+  left: 5.1em;
+  -webkit-transform-origin: 0px 5.1em;
+  transform-origin: 0px 5.1em;
+  -webkit-animation: loader2 2s infinite ease;
+  animation: loader2 2s infinite ease;
+}
+@-webkit-keyframes loader2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.model-details-luxury-features-bg{
+	    border-color:#2E324F;
+		background:-webkit-linear-gradient(0deg, #2E324F, #0E0D1D);
+		background:-o-linear-gradient(0deg, #2E324F, #0E0D1D);
+		background:-moz-linear-gradient(0deg, #2E324F, #0E0D1D);
+		background:linear-gradient(0deg, #0E0D1D, #2E324F); 
+		background-size:120%;
+	}
+.model-details-luxury-features-img{width:100%;max-width:235px;margin:10px;border:4px solid white;}
+.model-details-luxury-features-bg > ul{padding-left: 25px;padding-right: 25px;}
+.model-details-luxury-features-bg > ul > li{padding: 5px;text-transform: uppercase;}
+.model-details-luxury-features-bg > ul > li > a{background: none!important;border:0px!important;border-bottom: 2px solid #fff!important;color:white!important;padding: 15px!important;}
+.model-details-luxury-features-bg > ul > li > a:active{border-bottom-color: #50C0F7!important;}
+.model-details-luxury-features-bg > ul > li.active > a{border-bottom: 2px solid #50C0F7!important;color:#50C0F7!important;font-weight: bold;}
+.model-details-luxury-features-bg > .tab-content > .tab-pane{color:white!important;padding:20px;min-height:300px;}
+.model-details-luxury-features-bg > .tab-content > .tab-pane > div > div > span > a{color:white!important;}
+.model-details-luxury-features-bg > .tab-content > .tab-pane > div > div > span{line-height: 160%;}
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 0px!important;
+  }
+}

@@ -13,6 +13,8 @@ import { ITComponent } from './it/it.component';
 import { GraphicComponent } from './graphic/graphic.component';
 import { ArchitectureComponent } from './architecture/architecture.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { ContactsComponent } from './contacts/contacts.component';
     NavComponent,
     GISComponent,
     ITComponent,
+    HeaderComponent,
+    FooterComponent,
     GraphicComponent,
     ArchitectureComponent,
     ContactsComponent

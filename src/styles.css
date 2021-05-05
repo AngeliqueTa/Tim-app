@@ -1,7 +1,14 @@
 /* You can add global styles to this file, and also import other style files 
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import "~bootstrap/dist/css/bootstrap.css";*/
-body{font-family: 'Open Sans','Trebuchet MS','Tahoma','Arial';background:#ffffff;}
+body{
+	font-family: 'Open Sans','Trebuchet MS','Tahoma','Arial';
+	background: url(assets/data/Images/WebsiteHomepageBG.png);
+	background-size: cover;
+    background-position: center center;
+	background-repeat: no-repeat;
+	height: 100%;
+}
 .img-logo{max-width:130px;padding:4px;}
 .searchbtn{border-radius: 100px;
     width: 34px;

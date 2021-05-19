@@ -89,3 +89,8 @@ body::-webkit-scrollbar-track:active {background: #333333;}
 .rzslider .rz-bar.rz-selection{background:#0db9f0;}
 .rzslider .rz-pointer{background-color:#0db9f0;}
 .rzslider .rz-ticks .rz-tick.rz-selected{background:#0db9f0;}
+
+.bckgrnd-img{
+    color: #fff;background-color: #337ab7;
+}
+.bckgrnd-gradient{background: linear-gradient(325deg, #17dcff, #0baaff, #0d364a);}

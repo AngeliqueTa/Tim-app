@@ -99,7 +99,7 @@
 	background-color: #f5f3f3;
     border-color: #3A3A3A;
 }
-/*.li:focus, li:hover{
+/* .li:focus, li:hover{
 	background-color:#efefef;
 	color:white; 
 	text-decoration: none;
@@ -110,7 +110,7 @@ a {
     text-decoration: none;
 }
 a:focus, a:hover {
-    color: #e62341;
+    color: #cccccc;
     text-decoration: none;
 }
 a-nocolor{
@@ -118,19 +118,20 @@ a-nocolor{
     text-decoration: none;
 }
 .nav-tabs>ul>li:active{
-	background-color:#efefef;
-	color:white; 
+	background-color:#5f5f5f;
 	text-decoration: none;
 }
 .nav-tabs>li>a:hover {
 	color: #ffffff;
-    background-color: #e62341;
+    background-color: #b1a2a4;
     border-color: #e62341;
 }
-.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {color:black;background-color:black;}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+	color:black;
+	background-color:black;
+}
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: white;
-    background-color: transparent;
+    color: rgb(255, 255, 255);
 }
 
 .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
@@ -256,11 +257,11 @@ body{background:#ffffff;color:#333333;}
 .container-footer{background: #f9f9f9;margin-left:140px;margin-right:140px;width:100%;}
 .container-footer-bottom{background: #e0dfdd;margin-left:140px;margin-right:140px;}
 body::-webkit-scrollbar-thumb {border: 0px;border-radius: 0px; background:#941327;}
-body::-webkit-scrollbar-thumb:hover{background:#3A3A3A;}
-body::-webkit-scrollbar-thumb:active{background:#ffffff;}
-body::-webkit-scrollbar-track{background:#ffffff;}
-body::-webkit-scrollbar-track:hover{background:#808080;}
-body::-webkit-scrollbar-track:active{background:#333333;}
+body::-webkit-scrollbar-thumb:hover{background:#0b6fa1c2;}
+body::-webkit-scrollbar-thumb:active{background:#0b6fa1c2;}
+body::-webkit-scrollbar-track{background:#0d364a;}
+body::-webkit-scrollbar-track:hover{background:#0d364a;}
+body::-webkit-scrollbar-track:active{background:#0d364a;}
 
 
 @media (min-width: 1024px){

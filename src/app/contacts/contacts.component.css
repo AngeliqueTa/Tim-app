@@ -1,0 +1,74 @@
+body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-img {
+    /* The image used */
+    background-image: url("../../assets/data/Images/MainLogo.png"), url("../../assets/data/Images/ContactsBanner.png");
+  
+    /* Control the height of the image */
+    min-height: 560px;
+  
+    /* Center and scale the image nicely */
+    background-position: left center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 300px, cover;
+    position: relative;
+    border-radius: 5px;
+  }
+  
+  /* Add styles to the form container */
+  .container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 70%;
+    padding: 16px;
+    border-radius: 5px;
+    /* background-color: rgba(44, 178, 255, 0.562); */
+    background-color: rgba(19, 147, 221, 0.562);
+    color:  rgb(220, 242, 255);
+  }
+  
+  /* Full-width input fields */
+    input[type=text], select, textarea{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(188, 230, 255, 0.808);
+    color: rgb(0, 100, 158);
+  }
+  
+  input[type=text]:focus, select, textarea:focus {
+    background-color: rgba(188, 230, 255, 0.808);
+    
+    outline: none;
+  }
+  ::placeholder{
+    color: rgb(0, 100, 158);
+  }
+  /* Set a style for the submit button */
+  .btn {
+    background-color: #5cbb03;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+
+  .ac{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+  }
